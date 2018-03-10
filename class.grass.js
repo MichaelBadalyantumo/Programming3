@@ -1,7 +1,8 @@
 //խոտի կլասը
-class Grass {
-    constructor(x, y, ind) {
-        this.index = ind;
+class Grass extends liveform
+{
+    constructor(x, y, index) {
+         super(x, y, index);
         this.x = x;
         this.y = y;
         this.energy = 5;
@@ -10,17 +11,11 @@ class Grass {
     }
 
     newDirections() {
-        this.directions = [
-            [this.x - 1, this.y - 1],
-            [this.x, this.y - 1],
-            [this.x + 1, this.y - 1],
-            [this.x - 1, this.y],
-            [this.x + 1, this.y],
-            [this.x - 1, this.y + 1],
-            [this.x, this.y + 1],
-            [this.x + 1, this.y + 1]
-        ];
+     
+        return super.newDirections();
+
     }
+
 
 
     getDirections(t) {

@@ -81,23 +81,23 @@ class Eatgrass {
             this.x = x;
             this.y = y;
 
- 
-            
+
+
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-                   
+
                 }
             }
-           
-          
+
+
 
         } else {
             this.move();
-            
+
         }
 
-        
+
         var emptyCord = this.getDirections(5);
 
         var cord = random(emptyCord);
@@ -106,8 +106,8 @@ class Eatgrass {
             console.log("die eatgrass");
             this.die();
 
-        } 
-        console.log("eat eatgrass");    
+        }
+        console.log("eat eatgrass");
     }
     mul() {
         var emptyCord = this.getDirections(0);
@@ -132,7 +132,7 @@ class Eatgrass {
         for (var i in eatArr) {
             if (this.x == eatArr[i].x && this.y == eatArr[i].y) {
                 eatArr.splice(i, 1);
-               
+
             }
         }
     }

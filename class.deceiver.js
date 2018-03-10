@@ -41,7 +41,7 @@ class Deceiver {
 
     mul() {
         this.multiply++;
-        if (this.multiply == 20) {
+        if (this.multiply == 50) {
             var emptyCord = this.getDirections(0);
 
             var cord = random(emptyCord);
