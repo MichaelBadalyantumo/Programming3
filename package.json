@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Programming",
+  "main": "class.creator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelBadalyantumo/Programming3.git"
+  },
+  "author": "Michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelBadalyantumo/Programming3/issues"
+  },
+  "homepage": "https://github.com/MichaelBadalyantumo/Programming3#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
