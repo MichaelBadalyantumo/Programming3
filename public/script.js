@@ -1,4 +1,4 @@
-var matrix = []
+var matrix = [];
 var side = 10;
 var xotArr = [];
 var eatArr = [];
@@ -12,7 +12,6 @@ var creatorCount = 20;
 var deceiverCount = 300;
 var erk = 60;
 var bar = 60;
-
 
 
 
@@ -169,4 +168,3 @@ function draw() {
 
 
 }
-
