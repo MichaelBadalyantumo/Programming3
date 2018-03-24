@@ -1,5 +1,8 @@
 var tiv = 3;
-
+var name = "norpredator";
+var surename = "Predator";
+var number = "3";
+var ind = "preArr";
 
 class Predator extends liveform {
     constructor(x, y, index) {
@@ -79,24 +82,16 @@ class Predator extends liveform {
         }
     }
 
-    mul() {
 
-        var emptyCord = this.getDirections(0);
 
-        var cord = random(emptyCord);
-        if (cord) {
-            var x = cord[0];
-            var y = cord[1];
 
-            this.multiply++;
-
-            var norpredator = new Predator(x, y, this.index);
-            preArr.push(norpredator);
-
-            matrix[y][x] = 3;
-            this.multiply = 0;
-        }
+    mul(g) {
+        console.log("mul");
+        return super.mul(g);
+           
     }
+
+
     die() {
 
         matrix[this.y][this.x] = 0;

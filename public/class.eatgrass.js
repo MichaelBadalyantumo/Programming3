@@ -89,9 +89,9 @@ class Eatgrass extends liveform {
         }
 
     }
-    mul(ch) {
+    mul(g) {
 
-        return super.getDirections(ch);
+        return super.mul(g);
 
     }
     die() {

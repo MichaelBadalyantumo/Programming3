@@ -5,6 +5,7 @@ var eatArr = [];
 var preArr = [];
 var creArr = [];
 var deArr = [];
+
 var grassCount = 1000;
 var eatgrassCount = 500;
 var predatorCount = 200;
@@ -13,10 +14,24 @@ var deceiverCount = 300;
 var erk = 60;
 var bar = 60;
 
+function changeColor(){
+    var x = document.getElementById("a");
+    if(x.style.color=="yellow"){
+    x.style.color="red";}
+    else if(x.style.color=="red"){
+    x.style.color="green";}
+    else{
+    x.style.color="red";}
+}
+
+
 
 
 
 function setup() {
+
+    
+
 
     for (var i = 0; i < bar; i++) {
         matrix.push([]);
@@ -105,11 +120,15 @@ function setup() {
 }
 
 function draw() {
-
-
+text(frameCount, width / 2, height / 2);
+console.log(frameCount);
     background('#acacac');
     for (var i = 0; i < matrix.length; i++) {
         for (var j = 0; j < matrix[i].length; j++) {
+            
+            
+            if (frameCount < 10){
+            
             if (matrix[i][j] == 1) {
                 fill("green");
                 rect(j * side, i * side, side, side);
@@ -131,7 +150,100 @@ function draw() {
                 fill("darkgreen");
                 rect(j * side, i * side, side, side);
             }
+
+
+            }
+
+
+            else if (frameCount < 20){
+            
+            if (matrix[i][j] == 1) {
+                fill("white");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 2) {
+                fill("orange");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 0) {
+                fill('#acacac');
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 3) {
+                fill("red");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 4) {
+                fill("blue");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 5) {
+                fill("darkgreen");
+                rect(j * side, i * side, side, side);
+            }
+
+
+            }
+
+            else if (frameCount < 30){
+            
+            if (matrix[i][j] == 1) {
+                fill("white");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 2) {
+                fill("orange");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 0) {
+                fill('#acacac');
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 3) {
+                fill("red");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 4) {
+                fill("blue");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 5) {
+                fill("darkgreen");
+                rect(j * side, i * side, side, side);
+            }
+
+
+            }
+
+            else if (frameCount <40){
+            
+            if (matrix[i][j] == 1) {
+                fill("white");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 2) {
+                fill("orange");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 0) {
+                fill('#acacac');
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 3) {
+                fill("red");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 4) {
+                fill("blue");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 5) {
+                fill("darkgreen");
+                rect(j * side, i * side, side, side);
+            }
+
+
+            }
+
+
         }
+
+if(frameCount == 40){
+    frameCount = 0;
+
+}
+
 
     }
 
