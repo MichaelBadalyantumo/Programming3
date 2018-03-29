@@ -1,8 +1,4 @@
 var tiv = 3;
-var name = "norpredator";
-var surename = "Predator";
-var number = "3";
-var ind = "preArr";
 
 class Predator extends liveform {
     constructor(x, y, index) {
@@ -35,14 +31,15 @@ class Predator extends liveform {
 
     move(ch) {
 
-        return super.getDirections(ch);
+        return super.move(ch);
 
     }
 
 
 
-    eat() {
-
+    eat(cel1) {
+        cel1 = Math.floor(Math.random(0) * 15);
+        
         var emptyCord = this.getDirections(2);
 
         var cord = random(emptyCord);
@@ -66,31 +63,51 @@ class Predator extends liveform {
 
                 }
             }
-            if (this.multiply == 50) {
-                this.mul()
+            if (frameCount > 2 & frameCount < 8) {
+                this.mul();
+                this.multiply = 0;
+            }
+
+            else if (frameCount > 24 & frameCount < 26) {
+                this.mul();
                 this.multiply = 0;
             }
 
         } else {
             this.move();
             this.energy--;
-            if (this.energy > 2) {
+          
+            if (cel1 < 10) {
                 this.die();
-
+                
                 
             }
         }
     }
+        
 
 
 
 
-    mul(g) {
-        console.log("mul");
-        return super.mul(g);
-           
+    mul() {
+         
+        var emptyCord = this.getDirections(0);
+
+        var cord = random(emptyCord);
+        if (cord) {
+            var x = cord[0];
+            var y = cord[1];
+
+            this.multiply++;
+
+            var norpredator = new Predator(x, y, this.index);
+            preArr.push(norpredator);
+
+            matrix[y][x] = 3;
+            this.multiply = 0;
+            console.log("sdfsdf");
+        }
     }
-
 
     die() {
 
@@ -102,6 +119,11 @@ class Predator extends liveform {
             }
         }
     }
+
+
+    
+
+
 
 
 }

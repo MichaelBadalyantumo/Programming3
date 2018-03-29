@@ -12,7 +12,7 @@ class Deceiver extends liveform {
     newDirections() {
 
         return super.newDirections();
-     
+
     }
 
 
@@ -27,7 +27,7 @@ class Deceiver extends liveform {
 
     mul() {
         this.multiply++;
-        if (this.multiply == 50) {
+        if (frameCount > 13 & frameCount < 17) {
             var emptyCord = this.getDirections(0);
 
             var cord = random(emptyCord);

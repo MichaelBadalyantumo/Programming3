@@ -11,26 +11,15 @@ var eatgrassCount = 500;
 var predatorCount = 200;
 var creatorCount = 20;
 var deceiverCount = 300;
-var erk = 60;
-var bar = 60;
-
-function changeColor(){
-    var x = document.getElementById("a");
-    if(x.style.color=="yellow"){
-    x.style.color="red";}
-    else if(x.style.color=="red"){
-    x.style.color="green";}
-    else{
-    x.style.color="red";}
-}
-
+var erk = 70;
+var bar = 70;
 
 
 
 
 function setup() {
 
-    
+
 
 
     for (var i = 0; i < bar; i++) {
@@ -120,129 +109,151 @@ function setup() {
 }
 
 function draw() {
-text(frameCount, width / 2, height / 2);
-console.log(frameCount);
+    text(frameCount, width / 2, height / 2);
+    console.log(frameCount);
     background('#acacac');
+    var cel1 = floor(random(0,15));
+    var cel2 = floor(random(0,40));
+    var cel3 = floor(random(0,20));
+    var cel4 = floor(random(-30,0));
+    
+    
+    var h = document.getElementById("pElement");
+    if(frameCount < 10){
+    h.innerText = "Spring " + cel1 + " C";
+    }
+
+    else if(frameCount < 20){
+        h.innerText = "Summer " + cel2 + " C";
+        }
+
+        else if(frameCount < 30){
+            h.innerText = "Autumn " + cel3 + " C";
+            }
+
+            else if(frameCount < 40){
+                h.innerText = "Winter " + cel4 + " C";
+                }
+
+
+  
     for (var i = 0; i < matrix.length; i++) {
         for (var j = 0; j < matrix[i].length; j++) {
-            
-            
-            if (frameCount < 10){
-            
-            if (matrix[i][j] == 1) {
-                fill("green");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 2) {
-                fill("orange");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 0) {
-                fill('#acacac');
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 3) {
-                fill("red");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 4) {
-                fill("blue");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 5) {
-                fill("darkgreen");
-                rect(j * side, i * side, side, side);
-            }
+
+
+            if (frameCount < 10) {
+
+                if (matrix[i][j] == 1) {
+                    fill("green");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 2) {
+                    fill("yellow");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 0) {
+                    fill('#8C8C8C');
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 3) {
+                    fill("red");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 4) {
+                    fill("blue");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 5) {
+                    fill("darkgreen");
+                    rect(j * side, i * side, side, side);
+                }
 
 
             }
 
 
-            else if (frameCount < 20){
-            
-            if (matrix[i][j] == 1) {
-                fill("white");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 2) {
-                fill("orange");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 0) {
-                fill('#acacac');
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 3) {
-                fill("red");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 4) {
-                fill("blue");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 5) {
-                fill("darkgreen");
-                rect(j * side, i * side, side, side);
-            }
+            else if (frameCount < 20) {
+
+                if (matrix[i][j] == 1) {
+                    fill("lightgreen");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 2) {
+                    fill("yellow");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 0) {
+                    fill('#8C8C8C');
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 3) {
+                    fill("red");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 4) {
+                    fill("blue");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 5) {
+                    fill("darkgreen");
+                    rect(j * side, i * side, side, side);
+                }
 
 
             }
 
-            else if (frameCount < 30){
-            
-            if (matrix[i][j] == 1) {
-                fill("white");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 2) {
-                fill("orange");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 0) {
-                fill('#acacac');
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 3) {
-                fill("red");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 4) {
-                fill("blue");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 5) {
-                fill("darkgreen");
-                rect(j * side, i * side, side, side);
-            }
+            else if (frameCount < 30) {
+
+                if (matrix[i][j] == 1) {
+                    fill("orange");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 2) {
+                    fill("yellow");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 0) {
+                    fill('#8C8C8C');
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 3) {
+                    fill("red");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 4) {
+                    fill("blue");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 5) {
+                    fill("darkgreen");
+                    rect(j * side, i * side, side, side);
+                }
 
 
             }
 
-            else if (frameCount <40){
-            
-            if (matrix[i][j] == 1) {
-                fill("white");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 2) {
-                fill("orange");
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 0) {
-                fill('#acacac');
-                rect(j * side, i * side, side, side);
-            } else if (matrix[i][j] == 3) {
-                fill("red");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 4) {
-                fill("blue");
-                rect(j * side, i * side, side, side);
-            }
-            else if (matrix[i][j] == 5) {
-                fill("darkgreen");
-                rect(j * side, i * side, side, side);
-            }
+            else if (frameCount < 40) {
 
+                if (matrix[i][j] == 1) {
+                    fill("white");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 2) {
+                    fill("yellow");
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 0) {
+                    fill('#8C8C8C');
+                    rect(j * side, i * side, side, side);
+                } else if (matrix[i][j] == 3) {
+                    fill("red");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 4) {
+                    fill("blue");
+                    rect(j * side, i * side, side, side);
+                }
+                else if (matrix[i][j] == 5) {
+                    fill("#DCDDDD");
+                    rect(j * side, i * side, side, side);
+                }
+               
 
             }
-
+           
 
         }
 
-if(frameCount == 40){
-    frameCount = 0;
 
-}
 
 
     }
@@ -280,3 +291,4 @@ if(frameCount == 40){
 
 
 }
+

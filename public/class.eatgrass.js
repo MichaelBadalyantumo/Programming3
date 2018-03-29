@@ -1,9 +1,6 @@
 //խոտակերի կլասը
 var tiv = 2;
-var name = "norXotaker";
-var surename = "Eatgrass";
-var number = "2";
-var ind = "eatArr";
+var h = document.getElementById("pElement");
 class Eatgrass extends liveform {
     constructor(x, y, index) {
         super(x, y, index);
@@ -37,7 +34,7 @@ class Eatgrass extends liveform {
 
     move(ch) {
 
-        return super.getDirections(ch);
+        return super.move(ch);
 
     }
 
@@ -69,8 +66,15 @@ class Eatgrass extends liveform {
 
                 }
             }
+            if (frameCount > 12 & frameCount < 18) {
+                this.mul();
+                this.multiply = 0;
+            }
 
-
+            else if (frameCount > 34 & frameCount < 36) {
+                this.mul();
+                this.multiply = 0;
+            }
 
         } else {
             this.move();
@@ -89,10 +93,24 @@ class Eatgrass extends liveform {
         }
 
     }
-    mul(g) {
+    mul() {
+        var emptyCord = this.getDirections(0);
 
-        return super.mul(g);
+        var cord = random(emptyCord);
+        if (cord) {
+            var x = cord[0];
+            var y = cord[1];
 
+            this.multiply++;
+
+            var norXotaker = new Eatgrass(x, y, this.index);
+            eatArr.push(norXotaker);
+
+            matrix[y][x] = 2;
+            this.multiply = 0;
+            
+        }
+        console.log("mil");
     }
     die() {
         matrix[this.y][this.x] = 0;

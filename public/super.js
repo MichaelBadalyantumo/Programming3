@@ -13,7 +13,7 @@ class liveform {
             [this.x - 1, this.y + 1],
             [this.x, this.y + 1],
             [this.x + 1, this.y + 1]
-        ];       
+        ];
     }
 
 
@@ -55,7 +55,7 @@ class liveform {
         }
     }
 
-getDirections1(t) {
+    getDirections1(t) {
         this.newDirections1();
         var found = [];
 
@@ -102,25 +102,8 @@ getDirections1(t) {
         ];
     }
 
-  mul() {
-        var emptyCord = this.getDirections(0);
 
-        var cord = random(emptyCord);
-        if (cord) {
-            var x = cord[0];
-            var y = cord[1];
-
-            this.multiply++;
-
-            var name = new surename(x, y, this.index);
-            ind.push(name);
-
-            matrix[y][x] = number;
-            this.multiply = 0;
-
-        }
-    }
-
+    
 
 
 

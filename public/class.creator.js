@@ -35,6 +35,7 @@ class Creator extends liveform {
                 preArr.push(norpredator);
 
                 matrix[y][x] = 3;
+               
             }
 
 
@@ -81,8 +82,8 @@ class Creator extends liveform {
 
     move(ch) {
 
-        return super.getDirections(ch);
-
+        return super.move(ch);
+        console.log("move");
     }
 
 
@@ -194,7 +195,7 @@ class Creator extends liveform {
 
 
         if (this.multiply == 1) {
-           
+
             this.multiply = 0;
         }
 
