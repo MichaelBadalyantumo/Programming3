@@ -37,8 +37,8 @@ class Predator extends liveform {
 
 
 
-    eat(cel1) {
-        cel1 = Math.floor(Math.random(0) * 15);
+    eat() {
+       
         
         var emptyCord = this.getDirections(2);
 
@@ -77,9 +77,9 @@ class Predator extends liveform {
             this.move();
             this.energy--;
           
-            if (cel1 < 10) {
+            if (cel1 <= 3) {
                 this.die();
-                
+                console.log("die");
                 
             }
         }

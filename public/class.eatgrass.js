@@ -38,7 +38,9 @@ class Eatgrass extends liveform {
 
     }
 
-
+    dontmove(g){
+        return super.dontmove(g);
+    }
 
     eat() {
 
@@ -74,6 +76,12 @@ class Eatgrass extends liveform {
             else if (frameCount > 34 & frameCount < 36) {
                 this.mul();
                 this.multiply = 0;
+            }
+
+            else if (cel4 <= -30) {
+                this.dontmove();
+                console.log("dont");
+                
             }
 
         } else {

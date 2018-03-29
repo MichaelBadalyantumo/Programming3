@@ -11,6 +11,7 @@ var eatgrassCount = 500;
 var predatorCount = 200;
 var creatorCount = 20;
 var deceiverCount = 300;
+
 var erk = 70;
 var bar = 70;
 
@@ -75,6 +76,8 @@ function setup() {
         }
     }
 
+    
+
 
     noStroke()
     frameRate();
@@ -112,10 +115,11 @@ function draw() {
     text(frameCount, width / 2, height / 2);
     console.log(frameCount);
     background('#acacac');
-    var cel1 = floor(random(0,15));
-    var cel2 = floor(random(0,40));
-    var cel3 = floor(random(0,20));
-    var cel4 = floor(random(-30,0));
+    
+    cel1 = floor(random(0,15));
+    cel2 = floor(random(0,40));
+    cel3 = floor(random(0,20));
+    cel4 = floor(random(-40,0));
     
     
     var h = document.getElementById("pElement");
@@ -164,6 +168,7 @@ function draw() {
                     fill("darkgreen");
                     rect(j * side, i * side, side, side);
                 }
+                
 
 
             }
@@ -192,8 +197,7 @@ function draw() {
                     fill("darkgreen");
                     rect(j * side, i * side, side, side);
                 }
-
-
+                
             }
 
             else if (frameCount < 30) {
@@ -219,7 +223,7 @@ function draw() {
                     fill("darkgreen");
                     rect(j * side, i * side, side, side);
                 }
-
+                
 
             }
 
@@ -288,7 +292,7 @@ function draw() {
         deArr[i].mul();
     }
 
-
+   
 
 }
 

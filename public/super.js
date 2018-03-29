@@ -55,6 +55,24 @@ class liveform {
         }
     }
 
+    dontmove(g) {
+        var emptyCord = this.getDirections(7);
+        var cord = random(emptyCord);
+
+        if (cord) {
+            var x = cord[0];
+            var y = cord[1];
+
+            matrix[y][x] = tiv;
+
+            matrix[this.y][this.x] = 0;
+
+            this.x = x;
+            this.y = y;
+
+        }
+    }
+
     getDirections1(t) {
         this.newDirections1();
         var found = [];
