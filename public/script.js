@@ -15,7 +15,16 @@ var amenakerCount = 10;
 var erk = 90;
 var bar = 70;
 var tackCount = 0;
-
+var socket = io.connect('http://localhost:3000');
+var statistics = {
+    "timestamp": "",
+    "eating": 0,
+    "muling": 0,
+    "counting": 0,
+    "counting": 0,
+    "dieing": 0,
+    "framecount": 0
+}
 
 
 function setup() {
@@ -184,7 +193,7 @@ function draw() {
 
     for (var i in creArr) {
 
-        creArr[i].eat();
+        creArr[i].eat();   
     }
 
 
@@ -200,13 +209,10 @@ function draw() {
 
         amArr[i].eat();
     }
-    
+    statistics.framecount = frameCount;
+    socket.emit("send data", statistics);
 
 }
-
-
-
-
 function fillChars(charCount, charType) {
     var h = 0;
     while (h < charCount) {
@@ -218,3 +224,32 @@ function fillChars(charCount, charType) {
         }
     }
 }
+
+
+
+
+
+
+
+function changeView(stat) {
+    var eating = document.getElementById("eating");
+    var muling = document.getElementById("muling");
+    var counting = document.getElementById("counting");
+    var common = document.getElementById("mulingcounting");
+    var dieing = document.getElementById("dieing");
+    eating.innerHTML = stat.eating;
+    muling.innerHTML = stat.muling;
+    counting.innerHTML = stat.counting;
+    common.innerHTML = stat.mulingcounting;
+    dieing.innerHTML = stat.dieing;
+}
+
+
+
+
+
+
+
+
+
+

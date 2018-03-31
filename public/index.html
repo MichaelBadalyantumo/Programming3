@@ -4,7 +4,10 @@
     <meta charset="utf8">
    
     <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="/socket/socket.io.js"></script>
     <script src="p5.js"></script>
+    
     <script src="script.js"></script>
     <script src="super.js"></script>
     <script src="class.grass.js"></script>
@@ -18,8 +21,46 @@
 <body>
   <h3 id="pElement">Weather</h3>
 
-  <a href="info.html"><img style="float:right;width:100px;padding-right:100px;" src="info.png"></a>
-  
+  <a href="info.html"><img style="width:50px;padding-left:100px;" src="info.png"></a>
+  <div id="tip">
+        
+        <div><p id="whitetext">Ստատիստիկա</p>
+            <ul>
+                <li id = "whitetext">Ուտել</li>
+                <li id = "whitetext">Բազմանալ</li>
+                <li id = "whitetext">Քանակ</li>
+                <li id = "whitetext">Ընդհանուր քանակ</li>
+                <li id = "whitetext">Մեռնել</li>
+                
+            </ul>
+        </div>
+        <div  id = "whitetext">Այս սեսիայի ստատիստիկան
+                <table>
+                    <tr>
+                        <td id = "whitetext">Ոտել</td>
+                        <td id="eating" style="color:white;">0</td>
+                    </tr>
+                    <tr>
+                        <td id = "whitetext">Բազմանալ</td>
+                        <td id="muling" style="color:white;">0</td>
+                    </tr>
+                    <tr>
+                        <td id = "whitetext">Քանակ</td>
+                        <td id="counting" style="color:white;">0</td>
+                    </tr>
+                    <tr>
+                        <td id = "whitetext">Ընդհանուր քանակ</td>
+                        <td id="mulingcounting" style="color:white;">0</td>
+                    </tr>
+                    <tr>
+                        <td id = "whitetext">Մեռնել</td>
+                        <td id="dieing" style="color:white;">0</td>
+                    </tr>
+                </table>
+            </div>
+            <br><br><br><br>
+        <p id="whitetext">Ընդհանուր ստատիստիկան տես <a href="stats.html" style="color:white;">այստեղ</a></p>
+    </div>
 </body>
 
 </html>

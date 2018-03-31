@@ -47,6 +47,9 @@ class Eatgrass extends liveform {
         if (cord) {
             this.multiply++;
             this.energy++;
+            statistics.eating++;
+            changeView(statistics);
+            
             var x = cord[0];
             var y = cord[1];
 

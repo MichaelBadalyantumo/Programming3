@@ -1,0 +1,1165 @@
+[
+    {
+        "timestamp": "Sat Mar 31 2018 12:08:00 GMT+0400 (+04)",
+        "clicks": 57,
+        "dbclicks": 8,
+        "keypresses": 80,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 12:08:25 GMT+0400 (+04)",
+        "clicks": 57,
+        "dbclicks": 8,
+        "keypresses": 406,
+        "framecount": 1000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 12:09:10 GMT+0400 (+04)",
+        "clicks": 34,
+        "dbclicks": 4,
+        "keypresses": 14,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 12:09:37 GMT+0400 (+04)",
+        "clicks": 64,
+        "dbclicks": 8,
+        "keypresses": 14,
+        "framecount": 1000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 12:10:02 GMT+0400 (+04)",
+        "clicks": 64,
+        "dbclicks": 8,
+        "keypresses": 14,
+        "framecount": 1500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:35:54 GMT+0400 (+04)",
+        "clicks": 102,
+        "dbclicks": 16,
+        "keypresses": 0,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:36:27 GMT+0400 (+04)",
+        "clicks": 43,
+        "dbclicks": 11,
+        "keypresses": 0,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:37:20 GMT+0400 (+04)",
+        "clicks": 31,
+        "dbclicks": 2,
+        "keypresses": 0,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:37:45 GMT+0400 (+04)",
+        "clicks": 67,
+        "dbclicks": 2,
+        "keypresses": 0,
+        "framecount": 1000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:38:10 GMT+0400 (+04)",
+        "clicks": 123,
+        "dbclicks": 2,
+        "keypresses": 0,
+        "framecount": 1500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:38:35 GMT+0400 (+04)",
+        "clicks": 202,
+        "dbclicks": 2,
+        "keypresses": 0,
+        "framecount": 2000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:39:00 GMT+0400 (+04)",
+        "clicks": 238,
+        "dbclicks": 2,
+        "keypresses": 0,
+        "framecount": 2500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:39:25 GMT+0400 (+04)",
+        "clicks": 277,
+        "dbclicks": 5,
+        "keypresses": 0,
+        "framecount": 3000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:52:58 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:53:23 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 1000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:53:48 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 1500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:54:13 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 2000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:54:38 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 2500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:55:03 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 3000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:55:29 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 3500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:55:54 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 4000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:56:19 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 4500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:56:44 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 5000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:57:09 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 5500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:57:34 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 6000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:57:59 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 6500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:58:24 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 7000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:58:49 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 7500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:59:14 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 8000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 14:59:39 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 8500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:00:04 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 9000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:00:29 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 9500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:00:55 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 10000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:01:20 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 10500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:01:45 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 11000
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:02:10 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 11500
+    },
+    {
+        "timestamp": "Sat Mar 31 2018 15:02:35 GMT+0400 (+04)",
+        "clicks": 0,
+        "dbclicks": 0,
+        "keypresses": 0,
+        "framecount": 12000
+    },
+    {
+        "timestamp": "",
+        "eating": 86,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 1
+    },
+    {
+        "timestamp": "",
+        "eating": 150,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 2
+    },
+    {
+        "timestamp": "",
+        "eating": 223,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 3
+    },
+    {
+        "timestamp": "",
+        "eating": 305,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 4
+    },
+    {
+        "timestamp": "",
+        "eating": 387,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 5
+    },
+    {
+        "timestamp": "",
+        "eating": 472,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 6
+    },
+    {
+        "timestamp": "",
+        "eating": 560,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 7
+    },
+    {
+        "timestamp": "",
+        "eating": 663,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 8
+    },
+    {
+        "timestamp": "",
+        "eating": 769,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 9
+    },
+    {
+        "timestamp": "",
+        "eating": 884,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 10
+    },
+    {
+        "timestamp": "",
+        "eating": 1008,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 11
+    },
+    {
+        "timestamp": "",
+        "eating": 1139,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 12
+    },
+    {
+        "timestamp": "",
+        "eating": 1404,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 13
+    },
+    {
+        "timestamp": "",
+        "eating": 1892,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 14
+    },
+    {
+        "timestamp": "",
+        "eating": 2627,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 15
+    },
+    {
+        "timestamp": "",
+        "eating": 2709,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 16
+    },
+    {
+        "timestamp": "",
+        "eating": 2782,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 17
+    },
+    {
+        "timestamp": "",
+        "eating": 2907,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 18
+    },
+    {
+        "timestamp": "",
+        "eating": 2923,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 19
+    },
+    {
+        "timestamp": "",
+        "eating": 2947,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 20
+    },
+    {
+        "timestamp": "",
+        "eating": 2983,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 21
+    },
+    {
+        "timestamp": "",
+        "eating": 3019,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 22
+    },
+    {
+        "timestamp": "",
+        "eating": 3062,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 23
+    },
+    {
+        "timestamp": "",
+        "eating": 3106,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 24
+    },
+    {
+        "timestamp": "",
+        "eating": 3148,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 25
+    },
+    {
+        "timestamp": "",
+        "eating": 3192,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 26
+    },
+    {
+        "timestamp": "",
+        "eating": 3243,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 27
+    },
+    {
+        "timestamp": "",
+        "eating": 3290,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 28
+    },
+    {
+        "timestamp": "",
+        "eating": 3334,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 29
+    },
+    {
+        "timestamp": "",
+        "eating": 3382,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 30
+    },
+    {
+        "timestamp": "",
+        "eating": 3432,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 31
+    },
+    {
+        "timestamp": "",
+        "eating": 3489,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 32
+    },
+    {
+        "timestamp": "",
+        "eating": 3544,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 33
+    },
+    {
+        "timestamp": "",
+        "eating": 3604,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 34
+    },
+    {
+        "timestamp": "",
+        "eating": 3655,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 35
+    },
+    {
+        "timestamp": "",
+        "eating": 3737,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 36
+    },
+    {
+        "timestamp": "",
+        "eating": 3818,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 37
+    },
+    {
+        "timestamp": "",
+        "eating": 3887,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 38
+    },
+    {
+        "timestamp": "",
+        "eating": 3955,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 39
+    },
+    {
+        "timestamp": "",
+        "eating": 4022,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 40
+    },
+    {
+        "timestamp": "",
+        "eating": 4087,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 41
+    },
+    {
+        "timestamp": "",
+        "eating": 4154,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 42
+    },
+    {
+        "timestamp": "",
+        "eating": 4209,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 43
+    },
+    {
+        "timestamp": "",
+        "eating": 4261,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 44
+    },
+    {
+        "timestamp": "",
+        "eating": 4315,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 45
+    },
+    {
+        "timestamp": "",
+        "eating": 72,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 1
+    },
+    {
+        "timestamp": "",
+        "eating": 156,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 2
+    },
+    {
+        "timestamp": "",
+        "eating": 227,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 3
+    },
+    {
+        "timestamp": "",
+        "eating": 306,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 4
+    },
+    {
+        "timestamp": "",
+        "eating": 394,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 5
+    },
+    {
+        "timestamp": "",
+        "eating": 490,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 6
+    },
+    {
+        "timestamp": "",
+        "eating": 586,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 7
+    },
+    {
+        "timestamp": "",
+        "eating": 709,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 8
+    },
+    {
+        "timestamp": "",
+        "eating": 835,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 9
+    },
+    {
+        "timestamp": "",
+        "eating": 968,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 10
+    },
+    {
+        "timestamp": "",
+        "eating": 1100,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 11
+    },
+    {
+        "timestamp": "",
+        "eating": 1243,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 12
+    },
+    {
+        "timestamp": "",
+        "eating": 1530,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 13
+    },
+    {
+        "timestamp": "",
+        "eating": 2050,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 14
+    },
+    {
+        "timestamp": "",
+        "eating": 2103,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 15
+    },
+    {
+        "timestamp": "",
+        "eating": 2107,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 16
+    },
+    {
+        "timestamp": "",
+        "eating": 2114,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 17
+    },
+    {
+        "timestamp": "",
+        "eating": 2131,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 18
+    },
+    {
+        "timestamp": "",
+        "eating": 2159,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 19
+    },
+    {
+        "timestamp": "",
+        "eating": 2193,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 20
+    },
+    {
+        "timestamp": "",
+        "eating": 2226,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 21
+    },
+    {
+        "timestamp": "",
+        "eating": 2258,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 22
+    },
+    {
+        "timestamp": "",
+        "eating": 2297,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 23
+    },
+    {
+        "timestamp": "",
+        "eating": 2339,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 24
+    },
+    {
+        "timestamp": "",
+        "eating": 2384,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 25
+    },
+    {
+        "timestamp": "",
+        "eating": 2430,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 26
+    },
+    {
+        "timestamp": "",
+        "eating": 2483,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 27
+    },
+    {
+        "timestamp": "",
+        "eating": 2535,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 28
+    },
+    {
+        "timestamp": "",
+        "eating": 2591,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 29
+    },
+    {
+        "timestamp": "",
+        "eating": 2649,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 30
+    },
+    {
+        "timestamp": "",
+        "eating": 2711,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 31
+    },
+    {
+        "timestamp": "",
+        "eating": 74,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 1
+    },
+    {
+        "timestamp": "",
+        "eating": 156,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 2
+    },
+    {
+        "timestamp": "",
+        "eating": 223,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 3
+    },
+    {
+        "timestamp": "",
+        "eating": 288,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 4
+    },
+    {
+        "timestamp": "",
+        "eating": 377,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 5
+    },
+    {
+        "timestamp": "",
+        "eating": 472,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 6
+    },
+    {
+        "timestamp": "",
+        "eating": 589,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 7
+    },
+    {
+        "timestamp": "",
+        "eating": 715,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 8
+    },
+    {
+        "timestamp": "",
+        "eating": 850,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 9
+    },
+    {
+        "timestamp": "",
+        "eating": 995,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 10
+    },
+    {
+        "timestamp": "",
+        "eating": 1146,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 11
+    },
+    {
+        "timestamp": "",
+        "eating": 1155,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 12
+    },
+    {
+        "timestamp": "",
+        "eating": 1162,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 13
+    },
+    {
+        "timestamp": "",
+        "eating": 1180,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 14
+    },
+    {
+        "timestamp": "",
+        "eating": 1218,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 15
+    },
+    {
+        "timestamp": "",
+        "eating": 1222,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 16
+    },
+    {
+        "timestamp": "",
+        "eating": 1228,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 17
+    },
+    {
+        "timestamp": "",
+        "eating": 1229,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 18
+    },
+    {
+        "timestamp": "",
+        "eating": 1232,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 19
+    },
+    {
+        "timestamp": "",
+        "eating": 1237,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 20
+    },
+    {
+        "timestamp": "",
+        "eating": 1250,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 21
+    },
+    {
+        "timestamp": "",
+        "eating": 1267,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 22
+    },
+    {
+        "timestamp": "",
+        "eating": 1287,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 23
+    },
+    {
+        "timestamp": "",
+        "eating": 1310,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 24
+    },
+    {
+        "timestamp": "",
+        "eating": 1336,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 25
+    },
+    {
+        "timestamp": "",
+        "eating": 71,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 1
+    },
+    {
+        "timestamp": "",
+        "eating": 142,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 2
+    },
+    {
+        "timestamp": "",
+        "eating": 210,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 3
+    },
+    {
+        "timestamp": "",
+        "eating": 300,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 4
+    },
+    {
+        "timestamp": "",
+        "eating": 391,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 5
+    },
+    {
+        "timestamp": "",
+        "eating": 506,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 6
+    },
+    {
+        "timestamp": "",
+        "eating": 625,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 7
+    },
+    {
+        "timestamp": "",
+        "eating": 758,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 8
+    },
+    {
+        "timestamp": "",
+        "eating": 901,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 9
+    },
+    {
+        "timestamp": "",
+        "eating": 1050,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 10
+    },
+    {
+        "timestamp": "",
+        "eating": 1206,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 11
+    },
+    {
+        "timestamp": "",
+        "eating": 1368,
+        "muling": 0,
+        "counting": 0,
+        "dieing": 0,
+        "framecount": 12
+    }
+]

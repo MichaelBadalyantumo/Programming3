@@ -56,8 +56,49 @@ class Amenaker extends liveform {
 
 
 
+        if (cord4) {
+            this.multiply++;
+            this.energy++;
+            var x = cord4[0];
+            var y = cord4[1];
 
-        if (cord2) {
+            matrix[y][x] = 6;
+            matrix[this.y][this.x] = 0;
+
+            this.x = x;
+            this.y = y;
+
+
+            for (var i in deArr) {
+                if (x == deArr[i].x && y == deArr[i].y) {
+                    deArr.splice(i, 1);
+                     break;
+                }
+            }
+
+        }
+        else if (cord3) {
+            this.multiply++;
+            this.energy++;
+            var x = cord3[0];
+            var y = cord3[1];
+
+            matrix[y][x] = 6;
+            matrix[this.y][this.x] = 0;
+
+            this.x = x;
+            this.y = y;
+
+
+            for (var i in preArr) {
+                if (x == preArr[i].x && y == preArr[i].y) {
+                    preArr.splice(i, 1);
+                     break;
+                }
+            }
+
+        }
+        else if (cord2) {
             this.multiply++;
             this.energy++;
             var x = cord2[0];
@@ -102,49 +143,9 @@ class Amenaker extends liveform {
 
         }
 
-        else if (cord3) {
-            this.multiply++;
-            this.energy++;
-            var x = cord3[0];
-            var y = cord3[1];
+        
 
-            matrix[y][x] = 6;
-            matrix[this.y][this.x] = 0;
-
-            this.x = x;
-            this.y = y;
-
-
-            for (var i in preArr) {
-                if (x == preArr[i].x && y == preArr[i].y) {
-                    preArr.splice(i, 1);
-                     break;
-                }
-            }
-
-        }
-
-        else if (cord4) {
-            this.multiply++;
-            this.energy++;
-            var x = cord4[0];
-            var y = cord4[1];
-
-            matrix[y][x] = 6;
-            matrix[this.y][this.x] = 0;
-
-            this.x = x;
-            this.y = y;
-
-
-            for (var i in deArr) {
-                if (x == deArr[i].x && y == deArr[i].y) {
-                    deArr.splice(i, 1);
-                     break;
-                }
-            }
-
-        }
+        
 
         else {
             this.move();
