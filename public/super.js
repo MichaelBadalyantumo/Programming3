@@ -45,7 +45,7 @@ class liveform {
             var x = cord[0];
             var y = cord[1];
 
-            matrix[y][x] = tiv;
+            matrix[y][x] = this.tiv;
 
             matrix[this.y][this.x] = 0;
 
@@ -55,25 +55,7 @@ class liveform {
         }
     }
 
-    dontmove(g) {
-        var emptyCord = this.getDirections(7);
-        var cord = random(emptyCord);
-
-        if (cord) {
-            var x = cord[0];
-            var y = cord[1];
-
-            matrix[y][x] = tiv;
-
-            matrix[this.y][this.x] = 0;
-
-            this.x = x;
-            this.y = y;
-
-        }
-    }
-
-    getDirections1(t) {
+    getDirections1(e) {
         this.newDirections1();
         var found = [];
 
@@ -81,7 +63,7 @@ class liveform {
             var x = this.directions1[i][0];
             var y = this.directions1[i][1];
             if (x >= 0 && x < matrix[0].length && y >= 0 && y < matrix.length) {
-                if (matrix[y][x] == t) {
+                if (matrix[y][x] == e) {
                     found.push(this.directions1[i]);
                 }
             }
@@ -91,7 +73,7 @@ class liveform {
 
 
 
-    newDirections1() {
+    newDirections1(d) {
         this.directions1 = [
             [this.x + 2, this.y],
             [this.x - 2, this.y],

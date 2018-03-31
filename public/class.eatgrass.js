@@ -1,6 +1,3 @@
-//խոտակերի կլասը
-var tiv = 2;
-var h = document.getElementById("pElement");
 class Eatgrass extends liveform {
     constructor(x, y, index) {
         super(x, y, index);
@@ -8,8 +5,9 @@ class Eatgrass extends liveform {
         this.y = y;
         this.multiply = 0;
         this.eatCount = 0;
-        this.energy = 3;
-
+        this.energy = 5;
+        this.tiv = 2;
+        
     }
 
     newDirections() {
@@ -35,12 +33,10 @@ class Eatgrass extends liveform {
     move(ch) {
 
         return super.move(ch);
-
+        
     }
 
-    dontmove(g){
-        return super.dontmove(g);
-    }
+
 
     eat() {
 
@@ -59,34 +55,27 @@ class Eatgrass extends liveform {
 
             this.x = x;
             this.y = y;
-
+            
 
 
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-
+                    
+            
                 }
             }
-            if (frameCount > 12 & frameCount < 18) {
-                this.mul();
-                this.multiply = 0;
-            }
 
-            else if (frameCount > 34 & frameCount < 36) {
-                this.mul();
-                this.multiply = 0;
-            }
-
-            else if (cel4 <= -30) {
-                this.dontmove();
-                console.log("dont");
+            if(cel2 > 30 & frameCount > 10 & frameCount < 20){
+                this.celdie();
                 
             }
 
-        } else {
-            this.move();
+        }
 
+           else{
+            this.move();
+            this.energy --;
         }
 
 
@@ -97,7 +86,8 @@ class Eatgrass extends liveform {
         if (cord) {
 
             this.die();
-
+            
+            
         }
 
     }
@@ -116,21 +106,37 @@ class Eatgrass extends liveform {
 
             matrix[y][x] = 2;
             this.multiply = 0;
-            
+   
+           
         }
-        console.log("mil");
+        
     }
     die() {
+        
+        if(this.energy < 3){
         matrix[this.y][this.x] = 0;
         for (var i in eatArr) {
             if (this.x == eatArr[i].x && this.y == eatArr[i].y) {
                 eatArr.splice(i, 1);
-
+                       
             }
         }
     }
+    }
 
+    celdie() {
+       
+        matrix[this.y][this.x] = 0;
+        for (var i in eatArr) {
+            if (this.x == eatArr[i].x && this.y == eatArr[i].y) {
+                eatArr.splice(i, 20);
+                
+            
+            }
+        
 
+    }
+    }
 
 
 }

@@ -1,5 +1,3 @@
-var tiv = 3;
-
 class Predator extends liveform {
     constructor(x, y, index) {
         super(x, y, index);
@@ -8,6 +6,7 @@ class Predator extends liveform {
         this.multiply = 0;
         this.eatCount = 0;
         this.energy = 5;
+        this.tiv = 3;
     }
     newDirections() {
 
@@ -32,19 +31,18 @@ class Predator extends liveform {
     move(ch) {
 
         return super.move(ch);
-
+        
     }
 
 
 
     eat() {
-       
-        
+
         var emptyCord = this.getDirections(2);
 
         var cord = random(emptyCord);
 
-        if (cord) {
+        if (cord & frameCount > 0 & frameCount < 30) {
             this.multiply++;
             this.energy++;
             var x = cord[0];
@@ -55,42 +53,51 @@ class Predator extends liveform {
 
             this.x = x;
             this.y = y;
-
+           
 
             for (var i in eatArr) {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
-
+                   
                 }
             }
-            if (frameCount > 2 & frameCount < 8) {
+            if (frameCount > 3 & frameCount > 7) {
                 this.mul();
                 this.multiply = 0;
             }
 
-            else if (frameCount > 24 & frameCount < 26) {
+            else if (frameCount > 23 & frameCount < 27) {
                 this.mul();
                 this.multiply = 0;
             }
 
-        } else {
-            this.move();
-            this.energy--;
-          
-            if (cel1 <= 3) {
+                   
+        
+           
+            
+
+            if (this.energy < 2) {
                 this.die();
-                console.log("die");
                 
+
             }
+
+        }  else if(frameCount > 0 & frameCount < 30){
+            this.move();
+            
+           
+        }
+        else{
+            
         }
     }
-        
+
 
 
 
 
     mul() {
-         
+
         var emptyCord = this.getDirections(0);
 
         var cord = random(emptyCord);
@@ -105,7 +112,7 @@ class Predator extends liveform {
 
             matrix[y][x] = 3;
             this.multiply = 0;
-            console.log("sdfsdf");
+           
         }
     }
 
@@ -121,7 +128,7 @@ class Predator extends liveform {
     }
 
 
-    
+
 
 
 

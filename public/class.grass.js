@@ -12,7 +12,7 @@ class Grass extends liveform {
     newDirections() {
 
         return super.newDirections();
-
+       
     }
 
 
@@ -21,7 +21,7 @@ class Grass extends liveform {
 
 
         return super.getDirections(t);
-
+        
 
 
     }
@@ -41,6 +41,7 @@ class Grass extends liveform {
 
                 matrix[y][x] = 1;
                 this.multiply = 0;
+
             }
         }
     }

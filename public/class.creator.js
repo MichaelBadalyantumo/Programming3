@@ -1,11 +1,10 @@
-var tiv = 4;
 
 class Creator extends liveform {
     constructor(x, y, index) {
         super(x, y, index);
         this.x = x;
         this.y = y;
-
+        this.tiv = 4;
         this.eatCount = 0;
         this.energy = 10;
     }
@@ -35,7 +34,7 @@ class Creator extends liveform {
                 preArr.push(norpredator);
 
                 matrix[y][x] = 3;
-               
+
             }
 
 
@@ -43,24 +42,24 @@ class Creator extends liveform {
 
     }
 
-    newDirections1() {
+    newDirections1(d) {
 
-        return super.newDirections1();
-
-    }
-
-
-    newDirections() {
-
-        return super.newDirections();
+        return super.newDirections1(d);
 
     }
 
 
-    getDirections1(t) {
+    newDirections(ch) {
+
+        return super.newDirections(ch);
+
+    }
 
 
-        return super.getDirections1(t);
+    getDirections1(e) {
+
+
+        return super.getDirections1(e);
 
 
 
@@ -83,10 +82,10 @@ class Creator extends liveform {
     move(ch) {
 
         return super.move(ch);
-        console.log("move");
+
     }
 
-
+    
 
     eat() {
 
@@ -150,7 +149,7 @@ class Creator extends liveform {
 
                 }
             }
-
+        
 
 
         } else {
