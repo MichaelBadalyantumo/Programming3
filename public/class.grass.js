@@ -27,7 +27,7 @@ class Grass extends liveform {
     }
 
     mul() {
-        this.multiply++;
+        this.multiply++; 
         if (this.multiply == 1) {
             var emptyCord = this.getDirections(0);
 

@@ -9,38 +9,26 @@ class Amenaker extends liveform {
 
     }
 
-    /*
+    
     newDirections1(d) {
 
         return super.newDirections1(d);
 
     }
-    */
+    
 
 
-    newDirections(ch) {
+    
 
-        return super.newDirections(ch);
-
-    }
-
-
-    /*
+    
     getDirections1(e) {
         return super.getDirections1(e);
     }
-    */
+    
 
 
 
-    getDirections(t) {
-
-
-        return super.getDirections(t);
-
-
-
-    }
+   
 
 
 
@@ -55,10 +43,10 @@ class Amenaker extends liveform {
 
     eat() {
 
-        var emptyCord1 = this.getDirections(1);
-        var emptyCord2 = this.getDirections(2);
-        var emptyCord3 = this.getDirections(3);
-        var emptyCord4 = this.getDirections(5);
+        var emptyCord1 = this.getDirections1(1);
+        var emptyCord2 = this.getDirections1(2);
+        var emptyCord3 = this.getDirections1(3);
+        var emptyCord4 = this.getDirections1(5);
 
         var cord1 = random(emptyCord1);
         var cord2 = random(emptyCord2);
@@ -85,7 +73,7 @@ class Amenaker extends liveform {
             for (var i in eatArr) {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
-                    console.log("kerav xotaker");
+                     break;
                 }
             }
 
@@ -108,7 +96,7 @@ class Amenaker extends liveform {
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-                    console.log("kerav xot");
+                     break;
                 }
             }
 
@@ -130,7 +118,7 @@ class Amenaker extends liveform {
             for (var i in preArr) {
                 if (x == preArr[i].x && y == preArr[i].y) {
                     preArr.splice(i, 1);
-                    console.log("kerav gish");
+                     break;
                 }
             }
 
@@ -152,7 +140,7 @@ class Amenaker extends liveform {
             for (var i in deArr) {
                 if (x == deArr[i].x && y == deArr[i].y) {
                     deArr.splice(i, 1);
-                    console.log("kerav tunavor khot");
+                     break;
                 }
             }
 
@@ -160,7 +148,7 @@ class Amenaker extends liveform {
 
         else {
             this.move();
-            console.log("gnac");
+           
 
         }
     }

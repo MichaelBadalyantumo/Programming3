@@ -26,8 +26,8 @@ class Deceiver extends liveform {
     }
 
     mul() {
-        this.multiply++;
-        if (this.multiply == 30) {
+        this.multiply++; 
+        if (this.multiply == 50) {
             var emptyCord = this.getDirections(0);
 
             var cord = random(emptyCord);

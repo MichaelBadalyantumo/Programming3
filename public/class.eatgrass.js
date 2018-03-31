@@ -61,16 +61,23 @@ class Eatgrass extends liveform {
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-                    
+                     break;
             
                 }
             }
 
-            if(cel2 > 30 & frameCount > 10 & frameCount < 20){
+            if(cel2 > 30 & tackCount > 10 & tackCount < 20){
                 this.celdie();
                 
             }
-
+            else if(tackCount > 11 & tackCount < 19){
+                this.mul();
+                
+            }
+            else if(tackCount == 35){
+                this.mul();
+                
+            }
         }
 
            else{
@@ -106,8 +113,7 @@ class Eatgrass extends liveform {
 
             matrix[y][x] = 2;
             this.multiply = 0;
-   
-           
+            
         }
         
     }
@@ -118,19 +124,19 @@ class Eatgrass extends liveform {
         for (var i in eatArr) {
             if (this.x == eatArr[i].x && this.y == eatArr[i].y) {
                 eatArr.splice(i, 1);
-                       
+                      break;  
             }
         }
     }
     }
 
     celdie() {
-       
+        
         matrix[this.y][this.x] = 0;
         for (var i in eatArr) {
             if (this.x == eatArr[i].x && this.y == eatArr[i].y) {
-                eatArr.splice(i, 20);
-                
+                eatArr.splice(i, 20); 
+                break;
             
             }
         

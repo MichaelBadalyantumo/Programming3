@@ -58,7 +58,7 @@ class Predator extends liveform {
             for (var i in eatArr) {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
-                   
+                    break;
                 }
             }
             if (frameCount > 3 & frameCount > 7) {
@@ -109,7 +109,7 @@ class Predator extends liveform {
 
             var norpredator = new Predator(x, y, this.index);
             preArr.push(norpredator);
-
+ 
             matrix[y][x] = 3;
             this.multiply = 0;
            
@@ -122,7 +122,7 @@ class Predator extends liveform {
         for (var i in preArr) {
             if (this.x == preArr[i].x && this.y == preArr[i].y) {
                 preArr.splice(i, 1);
-
+                break;
             }
         }
     }

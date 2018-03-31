@@ -36,6 +36,11 @@ class Creator extends liveform {
                 matrix[y][x] = 3;
 
             }
+            else if (ch === 5) {
+                var nordavajan = new Deceiver(x, y, 5);
+                deArr.push(nordavajan);
+                matrix[y][x] = 5;
+            }
 
 
         }
@@ -49,11 +54,7 @@ class Creator extends liveform {
     }
 
 
-    newDirections(ch) {
-
-        return super.newDirections(ch);
-
-    }
+   
 
 
     getDirections1(e) {
@@ -67,14 +68,7 @@ class Creator extends liveform {
 
 
 
-    getDirections(t) {
-
-
-        return super.getDirections(t);
-
-
-
-    }
+    
 
 
 
@@ -89,7 +83,7 @@ class Creator extends liveform {
 
     eat() {
 
-        var emptyCord = this.getDirections(1);
+        var emptyCord = this.getDirections1(1);
 
         var cord = random(emptyCord);
 
@@ -110,11 +104,12 @@ class Creator extends liveform {
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-
+                    this.create(2);
+                    break;
                 }
             }
 
-            this.create(2);
+            
 
         } else {
             this.move();
@@ -122,7 +117,7 @@ class Creator extends liveform {
         }
 
 
-        var emptyCord = this.getDirections(2);
+        var emptyCord = this.getDirections1(2);
 
         var cord = random(emptyCord);
 
@@ -144,9 +139,9 @@ class Creator extends liveform {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
 
-                    //console.log("eat yellow");
+                    
                     this.create(3);
-
+                    break;
                 }
             }
         
@@ -160,7 +155,7 @@ class Creator extends liveform {
 
 
 
-        var emptyCord = this.getDirections(3);
+        var emptyCord = this.getDirections1(3);
 
         var cord = random(emptyCord);
 
@@ -181,10 +176,13 @@ class Creator extends liveform {
             for (var i in preArr) {
                 if (x == preArr[i].x && y == preArr[i].y) {
                     preArr.splice(i, 1);
+                    this.create(5);
+                    
+                    break;
                 }
             }
 
-            this.create(2);
+              
 
         } else {
             this.move();
