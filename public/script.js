@@ -28,11 +28,11 @@ function setup() {
     }
 
     fillChars(grassCount, 1);
-    fillChars(eatgrassCount, 2)
-    fillChars(predatorCount, 3)
-    fillChars(creatorCount, 4)
-    fillChars(deceiverCount, 5)
-    fillChars(amenakerCount, 6)
+    fillChars(eatgrassCount, 2);
+    fillChars(predatorCount, 3);
+    fillChars(creatorCount, 4);
+    fillChars(deceiverCount, 5);
+    fillChars(amenakerCount, 6);
 
     noStroke();
     frameRate(60);

@@ -42,7 +42,7 @@ class Predator extends liveform {
 
         var cord = random(emptyCord);
 
-        if (cord & frameCount > 0 & frameCount < 30) {
+        if (cord & tackCount > 0 & tackCount < 30) {
             this.multiply++;
             this.energy++;
             var x = cord[0];
@@ -61,16 +61,19 @@ class Predator extends liveform {
                     break;
                 }
             }
-            if (frameCount > 3 & frameCount > 7) {
+            if (tackCount > 3 & tackCount > 7) {
                 this.mul();
                 this.multiply = 0;
             }
 
-            else if (frameCount > 23 & frameCount < 27) {
+            else if (tackCount > 23 & tackCount < 27) {
                 this.mul();
                 this.multiply = 0;
             }
-
+            else if (cel4 < -30 & tackCount > 30 & tackCount < 40) {
+                this.mul();
+                this.multiply = 0;
+            }
                    
         
            
@@ -82,7 +85,7 @@ class Predator extends liveform {
 
             }
 
-        }  else if(frameCount > 0 & frameCount < 30){
+        }  else if(tackCount > 0 & tackCount < 30){
             this.move();
             
            
