@@ -47,3 +47,12 @@ table, tr, td{
     padding:5px;
     margin-top:10px;
 }
+
+#statistics{
+    color:white;
+}
+
+#time{
+    color:white;
+    font-size:25px;
+}

@@ -12,7 +12,7 @@ class Deceiver extends liveform {
     newDirections() {
 
         return super.newDirections();
-  
+
     }
 
 
@@ -26,8 +26,8 @@ class Deceiver extends liveform {
     }
 
     mul() {
-        this.multiply++; 
-        if (this.multiply == 50) {
+        this.multiply++;
+        if (tackCount > 22 & tackCount < 26) {
             var emptyCord = this.getDirections(0);
 
             var cord = random(emptyCord);
@@ -40,6 +40,8 @@ class Deceiver extends liveform {
 
                 matrix[y][x] = 5;
                 this.multiply = 0;
+                statistics.mulingdeceiver++;
+                changeView(statistics);
             }
         }
     }

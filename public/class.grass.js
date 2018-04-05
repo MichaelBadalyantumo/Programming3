@@ -12,7 +12,7 @@ class Grass extends liveform {
     newDirections() {
 
         return super.newDirections();
-       
+
     }
 
 
@@ -21,13 +21,13 @@ class Grass extends liveform {
 
 
         return super.getDirections(t);
-        
+
 
 
     }
 
     mul() {
-        this.multiply++; 
+        this.multiply++;
         if (this.multiply == 1) {
             var emptyCord = this.getDirections(0);
 
@@ -41,7 +41,8 @@ class Grass extends liveform {
 
                 matrix[y][x] = 1;
                 this.multiply = 0;
-
+                statistics.mulinggrass++;
+                changeView(statistics);
             }
         }
     }

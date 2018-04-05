@@ -18,12 +18,17 @@ var tackCount = 0;
 var socket = io.connect('http://localhost:3000');
 var statistics = {
     "timestamp": "",
-    "eating": 0,
-    "muling": 0,
-    "counting": 0,
-    "counting": 0,
-    "dieing": 0,
-    "framecount": 0
+    "eatingeatgrass": 0,
+    "eatingpredator": 0,
+    "eatingcreator": 0,
+    "eatingamenaker": 0,
+    "mulinggrass": 0,
+    "mulingeatgrass": 0,
+    "mulingpredator": 0,
+    "mulingdeceiver": 0,
+
+    "dieingeatgrass": 0,
+    "dieingpredator": 0
 }
 
 
@@ -84,7 +89,7 @@ function setup() {
 function draw() {
     tackCount++;
     text(tackCount, width / 2, height / 2);
-    
+    time.innerText = (new Date()).toString();
 
     background('#8C8C8C');
     cel1 = floor(random(0, 15));
@@ -110,70 +115,70 @@ function draw() {
         tackCount = 0;
     }
 
-  
-    
-    if(tackCount < 10){
+
+
+    if (tackCount < 10) {
         gr1Color = "green";
         dark5Color = "darkgreen";
     }
-    else if(tackCount < 20){
+    else if (tackCount < 20) {
         gr1Color = "lightgreen";
         dark5Color = "green";
     }
-    else if(tackCount < 30){
+    else if (tackCount < 30) {
         gr1Color = "orange";
         dark5Color = "darkorange";
     }
-    else if(tackCount < 40){
+    else if (tackCount < 40) {
         gr1Color = "white";
         dark5Color = "#DCDDDD";
     }
 
-    
+
 
     for (var i = 0; i < matrix.length; i++) {
         for (var j = 0; j < matrix[i].length; j++) {
 
-            
-
-                if (matrix[i][j] == 1) {
-                    fill(gr1Color);
-                    rect(j * side, i * side, side, side);
-                } else if (matrix[i][j] == 2) {
-                    fill("yellow");
-                    rect(j * side, i * side, side, side);
-                } else if (matrix[i][j] == 0) {
-                    fill('#8C8C8C');
-                    rect(j * side, i * side, side, side);
-                } else if (matrix[i][j] == 3) {
-                    fill("red");
-                    rect(j * side, i * side, side, side);
-                }
-                else if (matrix[i][j] == 4) {
-                    fill("blue");
-                    rect(j * side, i * side, side, side);
-                }
-                else if (matrix[i][j] == 5) {
-                    fill(dark5Color);
-                    rect(j * side, i * side, side, side);
-                }
-                else if (matrix[i][j] == 6) {
-                    fill("black");
-                    rect(j * side, i * side, side, side);
-                }
 
 
-            
+            if (matrix[i][j] == 1) {
+                fill(gr1Color);
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 2) {
+                fill("yellow");
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 0) {
+                fill('#8C8C8C');
+                rect(j * side, i * side, side, side);
+            } else if (matrix[i][j] == 3) {
+                fill("red");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 4) {
+                fill("blue");
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 5) {
+                fill(dark5Color);
+                rect(j * side, i * side, side, side);
+            }
+            else if (matrix[i][j] == 6) {
+                fill("black");
+                rect(j * side, i * side, side, side);
+            }
 
 
-            
 
-          
+
+
+
+
+
 
         }
     }
 
-   
+
 
     for (var i in xotArr) {
         xotArr[i].mul();
@@ -193,7 +198,7 @@ function draw() {
 
     for (var i in creArr) {
 
-        creArr[i].eat();   
+        creArr[i].eat();
     }
 
 
@@ -204,12 +209,13 @@ function draw() {
         deArr[i].mul();
     }
 
-    
+
     for (var i in amArr) {
 
         amArr[i].eat();
     }
-    statistics.framecount = frameCount;
+    statistics.tackCount = tackCount;
+    statistics.timestamp = (new Date()).toString();
     socket.emit("send data", statistics);
 
 }
@@ -232,24 +238,24 @@ function fillChars(charCount, charType) {
 
 
 function changeView(stat) {
-    var eating = document.getElementById("eating");
-    var muling = document.getElementById("muling");
-    var counting = document.getElementById("counting");
-    var common = document.getElementById("mulingcounting");
-    var dieing = document.getElementById("dieing");
-    eating.innerHTML = stat.eating;
-    muling.innerHTML = stat.muling;
-    counting.innerHTML = stat.counting;
-    common.innerHTML = stat.mulingcounting;
-    dieing.innerHTML = stat.dieing;
+    var eatingeatgrass = document.getElementById("eatingeatgrass");
+    var eatingpredator = document.getElementById("eatingpredator");
+    var eatingcreator = document.getElementById("eatingcreator");
+    var eatingamenaker = document.getElementById("eatingamenaker");
+    var mulinggrass = document.getElementById("mulinggrass");
+    var mulingeatgrass = document.getElementById("mulingeatgrass");
+    var mulingpredator = document.getElementById("mulingpredator");
+    var mulingdeceiver = document.getElementById("mulingdeceiver");
+    var dieingeatgrass = document.getElementById("dieingeatgrass");
+    var dieingpredator = document.getElementById("dieingpredator");
+    eatingeatgrass.innerHTML = stat.eatingeatgrass;
+    eatingpredator.innerHTML = stat.eatingpredator;
+    eatingcreator.innerHTML = stat.eatingcreator;
+    eatingamenaker.innerHTML = stat.eatingamenaker;
+    mulinggrass.innerHTML = stat.mulinggrass;
+    mulingeatgrass.innerHTML = stat.mulingeatgrass;
+    mulingpredator.innerHTML = stat.mulingpredator;
+    mulingdeceiver.innerHTML = stat.mulingdeceiver;
+    dieingeatgrass.innerHTML = stat.dieingeatgrass;
+    dieingpredator.innerHTML = stat.dieingpredator;
 }
-
-
-
-
-
-
-
-
-
-

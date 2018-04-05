@@ -9,26 +9,26 @@ class Amenaker extends liveform {
 
     }
 
-    
+
     newDirections1(d) {
 
         return super.newDirections1(d);
 
     }
-    
 
 
-    
 
-    
+
+
+
     getDirections1(e) {
         return super.getDirections1(e);
     }
-    
 
 
 
-   
+
+
 
 
 
@@ -67,12 +67,13 @@ class Amenaker extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingamenaker++;
+            changeView(statistics);
 
             for (var i in deArr) {
                 if (x == deArr[i].x && y == deArr[i].y) {
                     deArr.splice(i, 1);
-                     break;
+                    break;
                 }
             }
 
@@ -88,12 +89,13 @@ class Amenaker extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingamenaker++;
+            changeView(statistics);
 
             for (var i in preArr) {
                 if (x == preArr[i].x && y == preArr[i].y) {
                     preArr.splice(i, 1);
-                     break;
+                    break;
                 }
             }
 
@@ -110,11 +112,12 @@ class Amenaker extends liveform {
             this.x = x;
             this.y = y;
 
-
+            statistics.eatingamenaker++;
+            changeView(statistics);
             for (var i in eatArr) {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
-                     break;
+                    break;
                 }
             }
 
@@ -132,24 +135,25 @@ class Amenaker extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingamenaker++;
+            changeView(statistics);
 
             for (var i in xotArr) {
                 if (x == xotArr[i].x && y == xotArr[i].y) {
                     xotArr.splice(i, 1);
-                     break;
+                    break;
                 }
             }
 
         }
 
-        
 
-        
+
+
 
         else {
             this.move();
-           
+
 
         }
     }

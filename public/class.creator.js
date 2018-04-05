@@ -54,7 +54,7 @@ class Creator extends liveform {
     }
 
 
-   
+
 
 
     getDirections1(e) {
@@ -68,7 +68,7 @@ class Creator extends liveform {
 
 
 
-    
+
 
 
 
@@ -79,7 +79,7 @@ class Creator extends liveform {
 
     }
 
-    
+
 
     eat() {
 
@@ -98,7 +98,8 @@ class Creator extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingcreator++;
+            changeView(statistics);
 
 
             for (var i in xotArr) {
@@ -109,7 +110,7 @@ class Creator extends liveform {
                 }
             }
 
-            
+
 
         } else {
             this.move();
@@ -132,19 +133,20 @@ class Creator extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingcreator++;
+            changeView(statistics);
 
 
             for (var i in eatArr) {
                 if (x == eatArr[i].x && y == eatArr[i].y) {
                     eatArr.splice(i, 1);
 
-                    
+
                     this.create(3);
                     break;
                 }
             }
-        
+
 
 
         } else {
@@ -170,19 +172,20 @@ class Creator extends liveform {
 
             this.x = x;
             this.y = y;
-
+            statistics.eatingcreator++;
+            changeView(statistics);
 
 
             for (var i in preArr) {
                 if (x == preArr[i].x && y == preArr[i].y) {
                     preArr.splice(i, 1);
                     this.create(5);
-                    
+
                     break;
                 }
             }
 
-              
+
 
         } else {
             this.move();

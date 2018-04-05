@@ -2,12 +2,12 @@
 
 <head>
     <meta charset="utf8">
-   
+
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
     <script src="/socket/socket.io.js"></script>
     <script src="p5.js"></script>
-    
+
     <script src="script.js"></script>
     <script src="super.js"></script>
     <script src="class.grass.js"></script>
@@ -19,47 +19,83 @@
 </head>
 
 <body>
-  <h3 id="pElement">Weather</h3>
+    <h3 id="pElement">Weather</h3>
 
-  <a href="info.html"><img style="width:50px;padding-left:100px;" src="info.png"></a>
-  <div id="tip">
-        
-        <div><p id="whitetext">Ստատիստիկա</p>
+    <a href="info.html">
+        <img style="width:50px;padding-left:100px;" src="info.png">
+    </a>
+    <div id="tip">
+
+        <div>
+            <p id="whitetext">Ստատիստիկա</p>
+            <p id="time"></p>
             <ul>
-                <li id = "whitetext">Ուտել</li>
-                <li id = "whitetext">Բազմանալ</li>
-                <li id = "whitetext">Քանակ</li>
-                <li id = "whitetext">Ընդհանուր քանակ</li>
-                <li id = "whitetext">Մեռնել</li>
-                
+                <li id="whitetext">Ուտել(Խոտակեր)</li>
+                <li id="whitetext">Ուտել(Գիշատիչ)</li>
+                <li id="whitetext">Ուտել(Ստեղծող)</li>
+                <li id="whitetext">Ուտել(Ամենակեր)</li>
+                <li id="whitetext">Բազմանալ(Խոտ)</li>
+                <li id="whitetext">Բազմանալ(Խոտակեր)</li>
+                <li id="whitetext">Բազմանալ(Գիշատիչ)</li>
+                <li id="whitetext">Բազմանալ(Դավաճան)</li>
+                <li id="whitetext">Մեռնել(Խոտակեր)</li>
+                <li id="whitetext">Մեռնել(Գիշատիչ)</li>
+
             </ul>
         </div>
-        <div  id = "whitetext">Այս սեսիայի ստատիստիկան
-                <table>
-                    <tr>
-                        <td id = "whitetext">Ոտել</td>
-                        <td id="eating" style="color:white;">0</td>
-                    </tr>
-                    <tr>
-                        <td id = "whitetext">Բազմանալ</td>
-                        <td id="muling" style="color:white;">0</td>
-                    </tr>
-                    <tr>
-                        <td id = "whitetext">Քանակ</td>
-                        <td id="counting" style="color:white;">0</td>
-                    </tr>
-                    <tr>
-                        <td id = "whitetext">Ընդհանուր քանակ</td>
-                        <td id="mulingcounting" style="color:white;">0</td>
-                    </tr>
-                    <tr>
-                        <td id = "whitetext">Մեռնել</td>
-                        <td id="dieing" style="color:white;">0</td>
-                    </tr>
-                </table>
-            </div>
-            <br><br><br><br>
-        <p id="whitetext">Ընդհանուր ստատիստիկան տես <a href="stats.html" style="color:white;">այստեղ</a></p>
+        <div id="whitetext">Այս սեսիայի ստատիստիկան
+            <table>
+                <tr>
+                    <td id="whitetext">Ուտել(Խոտակեր)</td>
+                    <td id="eatingeatgrass" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Ուտել(Գիշատիչ)</td>
+                    <td id="eatingpredator" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Ուտել(Սարքող)</td>
+                    <td id="eatingcreator" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Ուտել(Ամենակեր)</td>
+                    <td id="eatingamenaker" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Բազմանալ(Խոտ)</td>
+                    <td id="mulinggrass" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Բազմանալ(Խոտակեր)</td>
+                    <td id="mulingeatgrass" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Բազմանալ(Գիշատիչ)</td>
+                    <td id="mulingpredator" style="color:white;">0</td>
+                </tr>
+                <tr>
+                    <td id="whitetext">Բազմանալ(Դավաճան)</td>
+                    <td id="mulingdeceiver" style="color:white;">0</td>
+                </tr>
+
+                <tr>
+                    <td id="whitetext">Մեռնել(Խոտակեր)</td>
+                    <td id="dieingeatgrass" style="color:white;">0</td>
+                </tr>
+
+                <tr>
+                    <td id="whitetext">Մեռնել(Գիշատիչ)</td>
+                    <td id="dieingpredator" style="color:white;">0</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="whitetext">Ընդհանուր ստատիստիկան տես
+            <a href="stats.html" style="color:white;">այստեղ</a>
+        </p>
     </div>
 </body>
 
